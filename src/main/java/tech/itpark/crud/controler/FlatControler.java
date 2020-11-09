@@ -72,7 +72,6 @@ public class FlatControler {
                 rooms);
 
     }
-//    localhost:8080/flats/search?station=Testov1&district=Central&maxPrice=2000&minPrice=1000&maxFloor=9&minFloor=2&rooms=2
 
     @RequestMapping("/search")
     public ArrayList<Flat> search(@RequestParam String text){
