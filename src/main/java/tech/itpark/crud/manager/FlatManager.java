@@ -30,7 +30,7 @@ public class FlatManager {
             return item;
         }
         for (Flat flat : items) {
-            if (flat.getId() == item.getId()){
+            if (flat.getId() == item.getId()) {
                 flat.setName(item.getName());
                 flat.setStation(item.getStation());
                 flat.setDistrict(item.getDistrict());
@@ -45,10 +45,10 @@ public class FlatManager {
 
     private int indexById(int id) {
         for (int i = 0; i < items.size(); i++) {
-             Flat flat = items.get(i);
-             if (flat.getId() == id) {
-                 return i;
-             }
+            Flat flat = items.get(i);
+            if (flat.getId() == id) {
+                return i;
+            }
         }
         return -1;
     }
@@ -73,11 +73,11 @@ public class FlatManager {
         ArrayList<Flat> result = new ArrayList<>();
 
         for (Flat item : items) {
-            if (!containsStations(item, station)){
+            if (!containsStations(item, station)) {
                 continue;
             }
 
-            if (!containsDistricts(item, district)){
+            if (!containsDistricts(item, district)) {
                 continue;
             }
 
@@ -121,20 +121,12 @@ public class FlatManager {
         ArrayList<Flat> result = new ArrayList<>();
 
         for (Flat item : items) {
-            if (item.getName().toLowerCase().contains(text)){
+            if (item.getName().toLowerCase().contains(text)) {
                 result.add(item);
             }
         }
         return result;
     }
-
-
-
-
-
-
-
-
 
 
 }

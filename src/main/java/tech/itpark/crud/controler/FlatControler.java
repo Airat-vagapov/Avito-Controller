@@ -74,7 +74,7 @@ public class FlatControler {
     }
 
     @RequestMapping("/search")
-    public ArrayList<Flat> search(@RequestParam String text){
+    public ArrayList<Flat> search(@RequestParam String text) {
         return manager.search(text);
     }
 }
