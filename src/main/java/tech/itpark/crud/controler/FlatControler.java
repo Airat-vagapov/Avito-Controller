@@ -53,7 +53,7 @@ public class FlatControler {
     }
 
     @RequestMapping("/filter")
-    public ArrayList<Flat> filter(
+    public List<Flat> filter(
             @RequestParam ArrayList<String> station,
             @RequestParam ArrayList<String> district,
             @RequestParam int maxPrice,
