@@ -70,7 +70,7 @@ public class FlatManager {
             int minFloor,
             int rooms) {
 
-        ArrayList<Flat> result = new ArrayList<>();
+        List<Flat> result = new ArrayList<>();
 
         for (Flat item : items) {
             if (!containsStations(item, station)) {
